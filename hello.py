@@ -1,12 +1,14 @@
-#Enter your age
-age = (20)
-print("How old are you?")
-print("" + str(age) + "")
-if age > 15:
-    print("You are old enough to drive.")
-if age > 17:
-    print("You are old enough to vote.")
-if age > 20:
-    print("You can legally buy alcohol.")
-if age > 64:
-    print("You are eligible for a senior discount.")
+#Enter the numeric grade you recieved
+numeric_grade = (79)
+print("Enter the numeric grade:")
+print("" + str(numeric_grade) + "")
+if numeric_grade > 89:
+    print("The letter grade is A.")
+elif numeric_grade > 79:
+    print("The letter grade is B.")
+elif numeric_grade > 69:
+    print("The letter grade is C.")
+elif numeric_grade > 59:
+    print("The letter grade is D.")
+elif numeric_grade < 51:
+    print("The letter grade is F.")
