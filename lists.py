@@ -1,22 +1,15 @@
-seats = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
-print("Available Seating:", seats)
+def song(name, action, noun, adjective, action1, royalty, animal, men_women):
+    print(f"{name} {action} on a {noun},")
+    print(f"{name} had a {adjective} {action1},")
+    print(f"all the {royalty}'s {animal} and all the {royalty}'s {men_women},")
+    print(f"Couldn't put {name} together again.")
+input_name = input("Enter a two part rhyming name")
+input_action = input("Enter an action")
+input_noun = input("Enter a noun")
+input_adjective = input("Enter an adjective")
+input_action1 = input("Enter another action")
+input_royalty = input("Enter a royalty status")
+input_animal = input("Enter an animal")
+input_men_women = input("Enter men or women")
 
-while True:
-    print("Available Seats:", seats)
-    seat_numbers = input("Please type the seat number you would like to purchase: ")
-    if seat_numbers.lower() == "done":
-        break
-    try:
-        seat_number = int(seat_numbers)
-
-        if seat_number < 1 or seat_number > 20:
-            print("Invalid number")
-        elif seat_number in seats:
-            seats.remove(seat_number)
-            print(f"Seat {seat_number} successfully purchased.")
-        else:
-            print(f"Seat {seat_number} is not available. Please select another.")
-    except ValueError:
-        print("Invalid input. Please enter a valid seat number or 'done' to finish.")
-
-print("Updated Available Seating:", seats)
+song(name=input_name, action=input_action, noun=input_noun, adjective=input_adjective, action1=input_action1, royalty=input_royalty, animal=input_animal, men_women=input_men_women)
