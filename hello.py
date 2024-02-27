@@ -1,11 +1,10 @@
-times_slots = ["Morning", "Midday", "Afternoon", "Evening"]
-heart_rate = []
-for time in times_slots:
-    rate = int(input(f"Enter your heart rate for {time}: "))
-    heart_rate.append([time, rate])
-print(heart_rate)
-total = 0
-for rate in heart_rate:
-    total += rate[1]
-average = round(total / len(heart_rate))
-print("average heart rate:", average)0
+def calculate_interest(calculated_interest):
+    calculated_interest = (input_principal_amount * input_interest_rate * input_investment_time) / 100
+    print(f"The simple interest for a principal amount of ${input_principal_amount:,.2f} \
+at an interest rate of {input_interest_rate}% over a period of {input_investment_time} years is: ${calculated_interest:,.2f}")
+
+input_principal_amount = float(input("Enter the principal amount: "))
+input_interest_rate = float(input("Enter the interest rate: "))
+input_investment_time = float(input("Enter the investment time: "))
+
+calculate_interest(calculated_interest = (input_principal_amount * input_interest_rate * input_investment_time) / 100)
