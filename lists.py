@@ -1,15 +1,6 @@
-def song(name, action, noun, adjective, action1, royalty, animal, men_women):
-    print(f"{name} {action} on a {noun},")
-    print(f"{name} had a {adjective} {action1},")
-    print(f"all the {royalty}'s {animal} and all the {royalty}'s {men_women},")
-    print(f"Couldn't put {name} together again.")
-input_name = input("Enter a two part rhyming name")
-input_action = input("Enter an action")
-input_noun = input("Enter a noun")
-input_adjective = input("Enter an adjective")
-input_action1 = input("Enter another action")
-input_royalty = input("Enter a royalty status")
-input_animal = input("Enter an animal")
-input_men_women = input("Enter men or women")
-
-song(name=input_name, action=input_action, noun=input_noun, adjective=input_adjective, action1=input_action1, royalty=input_royalty, animal=input_animal, men_women=input_men_women)
+def main():
+    programming_classes = ('Intro to Python', 'Advanced Python', 'Database Essentials', 'Web Development Basics', 'Data Structures in Python', 'Web Design Fundamentals')
+    for item in programming_classes:
+        print(item)
+    print("The tuple has", len(programming_classes), "items")
+main()
